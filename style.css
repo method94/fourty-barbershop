@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'OPTICloister', sans-serif;
+  overflow-x: hidden;
+}
+
+/* FONT FACE */
+@font-face {
+  font-family: 'OPTICloister';
+  src: url('./fonts/OPTICloister-OpenFace.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#about {
+      height: 100vh;
+  background-image: url('./img/barbershop-brush.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  margin-top:0px; /* Platz für feste Navbar */
+}
+/* HERO SECTION */
+.hero-section {
+  height: 100vh;
+  background-image: url('./img/barbershop-brush.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  margin-top:60px; /* Platz für feste Navbar */
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(12, 13, 15, 0.75);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content .reg {
+  font-size: 0.3em;
+  vertical-align: super;
+}
+
+
+
+.hero-content hr {
+  width: 100%;
+  max-width: 300px;
+  height: 2px;
+  background-color: #01A55B;
+  border: none;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.logo img {
+  height: 350px;
+  max-width: 100%;
+  object-fit: contain;
+}
