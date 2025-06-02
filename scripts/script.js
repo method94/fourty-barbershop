@@ -1,25 +1,26 @@
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
+
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if(window.scrollY > 50) {
+      navbar.classList.add('navbar--transparent');
+    } else {
+      navbar.classList.remove('navbar--transparent');
+    }
+  });
+
 
 
 /* Script for burger menu bar event */
 const burger = document.getElementById('burger');
 const navMenu = document.getElementById('navMenu');
 
-// Menü auf-/zuklappen beim Klick auf Burger
 burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
   navMenu.classList.toggle('active');
-});
 
-// Menü schließen, wenn ein Menüpunkt geklickt wird (nur mobil relevant)
-navMenu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('active');
-  });
+  if (burger.classList.contains('active')) {
+    burger.textContent = '✕';  // X als Zeichen
+  } else {
+    burger.textContent = '☰';  // Burger Icon
+  }
 });

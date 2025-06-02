@@ -34,19 +34,22 @@ html, body {
 }
 /* HERO SECTION */
 .hero-section {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('./img/barbershop-brush.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   text-align: center;
-  padding: 2rem;
+
+  padding: 6rem 2rem 6rem;
   margin-top:60px; /* Platz für feste Navbar */
+
 }
 
 .hero-section::before {
@@ -61,7 +64,10 @@ html, body {
   position: relative;
   z-index: 2;
   color: white;
-  max-width: 800px;
+  text-align: center;
+  max-width: 90%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-content h1 {
@@ -79,7 +85,7 @@ html, body {
 
 .hero-content hr {
   width: 100%;
-  max-width: 300px;
+  max-width: 600px;
   height: 2px;
   background-color: #01A55B;
   border: none;
@@ -89,10 +95,13 @@ html, body {
 .hero-content p {
   font-size: 1.8rem;
   line-height: 1.6;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .logo img {
-  height: 350px;
-  max-width: 100%;
+  height: 400px;
+  max-width: 150%;
   object-fit: contain;
+  margin-top: 75px;
 }
