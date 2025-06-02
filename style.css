@@ -202,7 +202,7 @@ td {
   border-bottom: 1px solid #ccc;
 }
 
-.scissors {
+/* .scissors {
     vertical-align: middle;
   height: 20px;
   width: auto;
@@ -210,10 +210,16 @@ td {
 }
 .razor {
     vertical-align: middle;
-  height: 31px;
+  height: 20px;
   width: auto;
   filter: brightness(0) invert(1)
-}
+} */
+
+.barber-pole {
+    vertical-align: middle;
+  height: 20px;
+  width: auto;
+} 
 
 /* CONTACT SECTION */
 
