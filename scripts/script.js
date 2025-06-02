@@ -24,3 +24,26 @@ burger.addEventListener('click', () => {
     burger.textContent = '☰';  // Burger Icon
   }
 });
+
+const logo = document.querySelector('.logo');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) { 
+    logo.classList.add('hidden');
+  } else {
+    logo.classList.remove('hidden');
+  }
+});
+
+const menuLinks = navMenu.querySelectorAll('a');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Menü schließen
+    burger.classList.remove('active');
+    navMenu.classList.remove('active');
+    // Burger-Icon wieder auf ☰ setzen
+    burger.textContent = '☰';
+  });
+});
+

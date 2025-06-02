@@ -9,6 +9,13 @@ html, body {
   overflow-x: hidden;
 }
 
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  text-align: left;        /* Links ausrichten */
+}
+
 /* FONT FACE */
 @font-face {
   font-family: 'OPTICloister';
@@ -56,7 +63,7 @@ html, body {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(12, 13, 15, 0.75);
+  background-color: rgba(23, 25, 30, 0.75);
   z-index: 1;
 }
 
@@ -99,9 +106,79 @@ html, body {
   max-width: 600px;
 }
 
-.logo img {
-  height: 400px;
-  max-width: 150%;
-  object-fit: contain;
-  margin-top: 75px;
+.service-content {
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+    font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  max-width: none;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* SECTION SERVICES ---------------------------------------------------------------------------------- */
+
+#services {
+  color: white;
+  background-color: black;
+
+
+}
+
+.service-section {
+  min-height: 100vh;
+  background-image: url('./img/barbershop-brush.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  text-align: left;
+  padding: 2rem;
+    padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+  background-image: url(./img/barber-background2.jpg);
+
+}
+
+
+.service-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(12, 13, 15, 0.75);
+  z-index: 1;
+}
+
+
+/* Tabelle Services */
+
+.service-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: none;
+  border: 3px solid #01a55b88;
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.service-table th, td {
+  padding: 1rem;
+  font-weight: 300;
+  
+}
+
+.service-table tr {
+  border-bottom: 1px solid #ccc;
 }
