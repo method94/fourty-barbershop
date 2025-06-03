@@ -114,7 +114,7 @@
   /* Abstand zwischen den beiden Logos */
 }
 
-.scissors {
+.metelogo {
   width: 80px;
   height: auto;
   filter: brightness(0) invert(1)
@@ -188,8 +188,8 @@
   }
 
 
-.scissors {
-  width: 18px;
+.metelogo {
+  width: 40px;
   height: auto;
   filter: brightness(0) invert(1)
 }

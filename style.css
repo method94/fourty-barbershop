@@ -455,7 +455,7 @@ td {
   background-attachment: fixed;
   color: white;
   min-height: 100vh;
-justify-content: space-between;
+  justify-content: space-between;
   flex-direction: column;
   display: flex;
   position: relative;
@@ -474,25 +474,26 @@ justify-content: space-between;
   left: 0;
   width: 100%;
   height: 100%;
-background-color: rgba(0, 0, 0, 0.5);
-z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
-#ourStory > * {
+#ourStory>* {
   position: relative;
   z-index: 1;
 }
 
 .elfsight-app-2e277a6e-4aea-4d35-a576-5bc2f1f7b0cb {
   transform: scale(0.6);
- transform-origin: center;
+  transform-origin: center;
 }
 
 .elfsight-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem; /* Schiebt es an das Ende der Section */
+  margin-top: 2rem;
+  /* Schiebt es an das Ende der Section */
 }
 
 
