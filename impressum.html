@@ -1,101 +1,102 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./navbar/navbar.css">
-  <title>Impressum - Fourty By Mete</title>
-  <style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Impressum - Fourty By Mete</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #222;
+            margin: 0;
+            padding: 1rem;
+            line-height: 1.6;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      margin: 0;
-      padding: 1rem;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #222;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    section#impressum {
-      max-width: 700px;
-      background: white;
-      margin: 2rem auto;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    section#impressum h2 {
-      margin-top: 0;
-      border-bottom: 2px solid #222;
-      padding-bottom: 0.5rem;
-    }
-    section#impressum p {
-      margin-bottom: 1.2rem;
-    }
-  </style>
+        header {
+            background-color: #222222;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            padding: 0 1rem;
+            height: 100px;
+ 
+
+        }
+
+        section#impressum {
+            max-width: 700px;
+            background: white;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section#impressum h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #222;
+            padding-bottom: 0.5rem;
+        }
+
+        section#impressum p {
+            margin-bottom: 1.2rem;
+        }
+
+        .logoOben {
+            width: 125px;
+            margin: 0 auto;
+        }
+
+        .pfeilZurueck {
+            width: 30px;
+         
+            filter: invert(1);
+
+        }
+    </style>
 </head>
+
 <body>
-        <nav class="navbar">
-        <div class="logo-container">
-            <img src="./icons/Fourty By Mete.png" alt="MeteLogo" class="metelogo">
-            <a href="https://www.facebook.com/fourtybarbershop/" target="_blank" rel="noopener norefferer">
-                <img src="./icons/facebook.png" alt="FacebookLogo" class="fblogo"></a>
-            <a href="https://www.instagram.com/fourty_barbershop/" target="_blank" rel="noopener norefferer">
-                <img src="./icons/instagram.webp" alt="InstagramLogo" class="instalogo"></a>
-        </div>
-        <div class="navbar-right">
-            <button class="burger" id="burger">&#9776;</button>
+    <header>
+        <a href="/#about">
+            <img src="./icons/pfeil-zurueck.png" class="pfeilZurueck" alt="Zurueck">
+        </a>
+        <img src="./img/logo.png" class="logoOben">
+    </header>
 
-        </div>
+    <section id="impressum">
+        <h2>Impressum</h2>
 
-        <div class="logo">
-            <img src="img/logo.png">
-        </div>
-        <ul class="navbar-menu" id="navMenu">
+        <p><strong>Angaben gemäß § 5 TMG:</strong><br>
+            Fourty By Mete<br>
+            Inhaber: Mete [Nachname]<br>
+            Musterstraße 12<br>
+            68159 Mannheim<br>
+            Deutschland</p>
 
-            <li><a href="#about">Home</a></li>
-            <li><a href="#services">Services</a></li>
+        <p><strong>Kontakt:</strong><br>
+            Telefon: +49 123 4567890<br>
+            E-Mail: info@fourtybymete.de<br>
+            Website: https://www.fourtybymete.de</p>
 
-            <li><a href="#ourStory">Our Story</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
+        <p><strong>Umsatzsteuer-ID:</strong><br>
+            Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+            DE123456789</p>
 
+        <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
+            Mete [Nachname]<br>
+            Musterstraße 12<br>
+            68159 Mannheim</p>
 
-  <section id="impressum">
-    <h2>Impressum</h2>
-
-    <p><strong>Angaben gemäß § 5 TMG:</strong><br>
-    Fourty Barbershop<br>
-    Inhaber: Mete Yilmaz<br>
-    S3 1<br>
-    68161 Mannheim<br>
-    Deutschland</p>
-
-    <p><strong>Kontakt:</strong><br>
-    Telefon: +49 123 4567890<br>
-    E-Mail: info@fourtybymete.de<br>
-    Website: https://www.fourtybymete.de</p>
-
-    <p><strong>Umsatzsteuer-ID:</strong><br>
-    Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
-    DE123456789</p>
-
-    <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
-    Mete Yilmaz<br>
-    S3 1<br>
-    68161 Mannheim</p>
-
-    <p><strong>Haftungsausschluss (Disclaimer):</strong><br>
-    Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
-
-  </section>
+        <p><strong>Haftungsausschluss (Disclaimer):</strong><br>
+            Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für
+            den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+    </section>
 </body>
+
 </html>
