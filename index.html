@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navbar/navbar.css">
     <link rel="icon" href="./icons/scissors.png" type="image/x-icon">
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 
 
@@ -23,7 +27,7 @@
 
     <nav class="navbar">
         <div class="logo-container">
-            <img src="./icons/schere-und-kamm.svg" alt="SchereUndKamm" class="scissors">
+            <img src="./icons/Fourty By Mete.png" alt="SchereUndKamm" class="scissors">
             <a href="https://www.facebook.com/fourtybarbershop/" target="_blank" rel="noopener norefferer">
                 <img src="./icons/facebook.png" alt="FacebookLogo" class="fblogo"></a>
             <a href="https://www.instagram.com/fourty_barbershop/" target="_blank" rel="noopener norefferer">
@@ -39,33 +43,42 @@
         </div>
         <ul class="navbar-menu" id="navMenu">
 
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">Home</a></li>
             <li><a href="#services">Services</a></li>
 
             <li><a href="#ourStory">Our Story</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
 
 
 
     <section id="about" class="hero-section">
-        <div class="hero-content">
-
-
+        <div class="background-slider">
+            <div class="splide" id="image-slider">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="./img/barber-background2.jpg" alt="Bild 1" /></li>
+                        <li class="splide__slide"><img src="./img/barbershop-brush.jpg" alt="Bild 2" /></li>
+                        <li class="splide__slide"><img src="./img/barbershop-inside.jpg" alt="Bild 3" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  <div class="hero-content">
             <h1>Fourty Barbershop Mannheim</h1>
             <hr>
             <p>
 
+        </div>
+
+        Kein Standard.
+        Kein Kompromiss.<br>
 
 
-                Kein Standard.
-                Kein Kompromiss.<br>
 
 
-
-
-            </p>
+        </p> -->
 
 
         </div>
@@ -75,18 +88,20 @@
     <section id="services" class="service-section">
 
         <div class="section-inner">
-            <h2>Preise & Leistung</h2>
+            <h2>Preise & Leistungen</h2>
 
             <table class="service-table">
                 <thead>
 
                     <tr>
-                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Trockenhaarschnitt</td>
+                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Trockenhaarschnitt
+                        </td>
                         <td>25€</td>
                     </tr>
 
                     <tr>
-                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Haarschnitt mit Waschen</td>
+                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Haarschnitt mit
+                            Waschen</td>
                         <td>30€</td>
                     </tr>
 
@@ -96,19 +111,23 @@
                     </tr>
 
                     <tr>
-                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Augenbrauen zupfen</td>
+                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Augenbrauen zupfen
+                        </td>
                         <td>7€</td>
                     </tr>
                     <tr>
-                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Augenbrauen zupfen</td>
+                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Augenbrauen zupfen
+                        </td>
                         <td>7€</td>
                     </tr>
                     <tr>
-                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Augenbrauen zupfen</td>
+                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Augenbrauen zupfen
+                        </td>
                         <td>7€</td>
                     </tr>
                     <tr>
-                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Augenbrauen zupfen</td>
+                        <td><img src="./icons/barber-pole.png" alt="BarberPole" class="barber-pole">Augenbrauen zupfen
+                        </td>
                         <td>7€</td>
                     </tr>
 
@@ -135,8 +154,28 @@
 
     <section id="ourStory" class="ourStory-section">
 
-        test
+        <h2>Über uns</h2>
 
+        <p class="ourStoryText"><strong>Tradition trifft Stil – seit 2019 in Mannheim</strong><br><br>
+
+            Unser Barbershop wurde 2019 von Mete in Mannheim gegründet – mit einer klaren Vision:
+            Qualität, Präzision und echter Service. Doch die Geschichte beginnt viel früher.
+            Seit 2009 im Friseurhandwerk bringt Mete nicht nur technisches Können,
+            sondern auch Leidenschaft und Feingefühl für jeden Haarschnitt mit.
+
+            Was uns auszeichnet? Höchste Qualität, auf die man sich verlassen kann.
+            Seit vielen Jahren stehen wir für saubere Schnitte, individuelle Beratung und ein Ambiente,
+            in dem sich jeder willkommen fühlt. Ob klassischer Herrenhaarschnitt,
+            moderner Fade oder Bartstyling – wir sorgen dafür, dass du den Laden nicht nur frisch,
+            sondern auch mit einem Lächeln verlässt.
+
+            Dein Look ist unsere Mission.<br>
+            <br>Wir könnten dir noch viel erzählen – aber unsere Google-Bewertungen sagen’s besser.<br>
+        </p>
+        <div class="elfsight-wrapper">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-2e277a6e-4aea-4d35-a576-5bc2f1f7b0cb" data-elfsight-app-lazy></div>
+        </div>
     </section>
 
 
@@ -199,7 +238,7 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Fourty Barberhop - Alle Rechte vorbehalten.</p>
+            <p>&copy; 2025 Fourty Barbershop - Alle Rechte vorbehalten.</p>
             <nav class="footer-nav">
                 <a href="/impressum.html">Impressum</a>
                 <span class="footer-seperator">|</span>

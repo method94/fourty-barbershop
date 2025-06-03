@@ -10,7 +10,8 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'OPTICloister', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
@@ -35,7 +36,6 @@ h1, h2 {
 
 #about {
   height: 100vh;
-  background-image: url('./img/barbershop-brush.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,23 +52,20 @@ h1, h2 {
 
 /* HERO SECTION */
 .hero-section {
-  min-height: 100vh;
-  background-image: url('./img/barbershop-brush.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  height: 100vh;
+  /* Höhe nach Wunsch, z. B. gesamte Bildschirmhöhe */
+  overflow: hidden;
+  color: white;
+}
+
+
+
+.hero-content {
+  position: relative;
+  z-index: 1;
   text-align: center;
-
-  padding: 6rem 2rem 6rem;
-  margin-top: 60px;
-  /* Platz für feste Navbar */
-
+  padding: 4rem 2rem;
 }
 
 .hero-section::before {
@@ -180,14 +177,15 @@ h1, h2 {
 /* Tabelle Services */
 
 .service-table {
-  border-collapse: collapse;
+  border-collapse: separate;
   width: 100%;
   max-width: none;
   border: 3px solid #FFFFFF;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 20px;
   margin: 0;
   box-sizing: border-box;
+  border-spacing: 0;
 }
 
 .service-table th,
@@ -216,10 +214,10 @@ td {
 } */
 
 .barber-pole {
-    vertical-align: middle;
+  vertical-align: middle;
   height: 20px;
   width: auto;
-} 
+}
 
 /* CONTACT SECTION */
 
@@ -321,7 +319,7 @@ td {
 
 .contact-item {
   display: inline-flex;
- justify-content: center;
+  justify-content: center;
   /* Vertikal zentrieren */
   gap: 0.5rem;
   /* Abstand zwischen Icon und Text */
@@ -382,7 +380,7 @@ td {
   margin: 0 auto;
 }
 
-.footer-nav a{
+.footer-nav a {
   color: #aaa;
   text-decoration: none;
   margin: 0 0.5rem;
@@ -391,4 +389,118 @@ td {
 .footer-nav a:hover {
   color: #555;
   margin: 0 0.25rem;
+}
+
+
+
+/* SLIDESHOW */
+
+#image-sider {
+  width: 100vw;
+  /* volle Breite des Viewports */
+  margin: 0;
+  /* Kein Außenabstand */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  /* zentriert die volle Breite */
+  margin-right: -50vw;
+  overflow: hidden;
+
+}
+
+#image-slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+
+}
+
+.background-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#image-slider,
+#image-slider .splide__track,
+#image-slider .splide__list,
+#image-slider .splide__slide {
+  height: 100%;
+}
+
+#image-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/* Our Story Section */
+
+#ourStory {
+  background-color: black;
+  background-image: url('./img/barbershopchair.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  min-height: 100vh;
+justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  text-align: left;
+  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+#ourStory::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 0;
+}
+
+#ourStory > * {
+  position: relative;
+  z-index: 1;
+}
+
+.elfsight-app-2e277a6e-4aea-4d35-a576-5bc2f1f7b0cb {
+  transform: scale(0.6);
+ transform-origin: center;
+}
+
+.elfsight-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; /* Schiebt es an das Ende der Section */
+}
+
+
+.ourStoryText {
+  background-color: rgba(0, 0, 0, 0.774);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: white;
+  margin: 0 auto;
+  line-height: 1.6;
 }

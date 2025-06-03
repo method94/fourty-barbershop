@@ -115,7 +115,7 @@
 }
 
 .scissors {
-  width: 32px;
+  width: 80px;
   height: auto;
   filter: brightness(0) invert(1)
 }
