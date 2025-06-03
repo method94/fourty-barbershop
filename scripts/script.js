@@ -60,3 +60,35 @@ menuLinks.forEach(link => {
       arrows: true,
     }).mount();
   });
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const paragraph = document.querySelector('.ourStoryText');
+    if (!paragraph) return;
+
+    const fullText = paragraph.getAttribute('data-text');
+    paragraph.textContent = ''; // leer machen zum Start
+
+    let index = 0;
+
+    function type() {
+      if (index < fullText.length) {
+        paragraph.textContent += fullText.charAt(index);
+        index++;
+        setTimeout(type, 10); // Tippen-Geschwindigkeit (30ms pro Buchstabe)
+      }
+    }
+
+    // Intersection Observer starten, sobald sichtbar wird
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          type();
+          observer.disconnect(); // nur einmal tippen
+        }
+      });
+    }, {
+      threshold: 0.5 // 50% sichtbar
+    });
+
+    observer.observe(paragraph);
+  });

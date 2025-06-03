@@ -516,3 +516,21 @@ td {
   font-size: 0.7em;
   vertical-align: super;
 }
+
+.ourStoryText {
+  white-space: pre-line; /* Damit Zeilenumbrüche aus dem Text angezeigt werden */
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 250px; /* Damit die Box nicht springt beim Tippen */
+  border-left: 2px solid #222; /* optional: Cursor-Strich Effekt */
+  padding-left: 8px;
+  overflow-wrap: break-word;
+  /* Optional: Cursor blink */
+  animation: blinkCursor 1s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
