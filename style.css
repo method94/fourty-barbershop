@@ -170,10 +170,14 @@ h2 {
   z-index: 1;
 }
 
+.pricelist {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Tabelle Services */
 
-.service-table {
+/* .service-table {
   border-collapse: separate;
   width: 100%;
   max-width: none;
@@ -196,7 +200,7 @@ td {
 .service-table tr {
   border-bottom: 1px solid #ccc;
 }
-
+ */
 /* .scissors {
     vertical-align: middle;
   height: 20px;
@@ -431,7 +435,7 @@ td {
 
 #ourStory {
   background-color: black;
-  background-image: url('./img/barbershop-brush.webp');
+  background-image: url('./img/barbershop-brush.jpg');
   min-height: 100vh;
   background-size: cover;
   background-position: center;
