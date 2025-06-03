@@ -345,20 +345,7 @@ td {
   margin-top: 1rem;
 }
 
-@media (max-width: 600px) {
-  .contact-info {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .divider {
-    width: 80%;
-    height: 1px;
-    min-height: 1px;
-    margin: 1rem 0;
-    margin: 1rem auto;
-  }
-}
 
 
 
@@ -490,7 +477,6 @@ td {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  /* Schiebt es an das Ende der Section */
 }
 
 
@@ -504,11 +490,16 @@ td {
 }
 
 .centered-strong {
-  display: block;      /* Macht den Span zu einem Block-Element */
-  text-align: center;  /* Zentriert den Text */
-  font-weight: bold;   /* Fett */
-  font-size: 1.2rem;   /* Optional: etwas größer */
-  margin: 1rem 0;      /* Abstand nach oben und unten */
+  display: block;
+  /* Macht den Span zu einem Block-Element */
+  text-align: center;
+  /* Zentriert den Text */
+  font-weight: bold;
+  /* Fett */
+  font-size: 1.2rem;
+  /* Optional: etwas größer */
+  margin: 1rem 0;
+  /* Abstand nach oben und unten */
 }
 
 .reg-symbol {
@@ -518,11 +509,14 @@ td {
 }
 
 .ourStoryText {
-  white-space: pre-line; /* Damit Zeilenumbrüche aus dem Text angezeigt werden */
+  white-space: pre-line;
+  /* Damit Zeilenumbrüche aus dem Text angezeigt werden */
   font-size: 1rem;
   line-height: 1.5;
-  min-height: 250px; /* Damit die Box nicht springt beim Tippen */
-  border-left: 2px solid #222; /* optional: Cursor-Strich Effekt */
+  min-height: 250px;
+  /* Damit die Box nicht springt beim Tippen */
+  border-left: 2px solid #222;
+  /* optional: Cursor-Strich Effekt */
   padding-left: 8px;
   overflow-wrap: break-word;
   /* Optional: Cursor blink */
@@ -532,5 +526,28 @@ td {
 @keyframes blinkCursor {
   50% {
     border-color: transparent;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divider {
+    width: 80%;
+    height: 1px;
+    min-height: 1px;
+    margin: 1rem 0;
+    margin: 1rem auto;
+  }
+
+
+  #ourStory {
+     background-size: 350%; /* Zoomt etwas raus im Vergleich zu 100% */
+    background-position: center;
+    background-attachment: scroll;
   }
 }
