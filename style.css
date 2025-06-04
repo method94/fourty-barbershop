@@ -562,8 +562,13 @@ td {
     display: block;
     margin-left: -20vw;
   }
-  .service-section {
+
+}
+
+@media (max-width: 2000px) {
+    .service-section {
     background-image: none;
+    background-color: #0c0d0f;
   }
 }
 
