@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FourtyBarbershop</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar/navbar.css">
-    <link rel="icon" href="./icons/scissors.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="./galery.css">
+    <link rel="icon" href="../icons/scissors.png" type="image/x-icon">
     <!-- Splide CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
@@ -23,15 +24,15 @@
 
 
 <body>
-
+<div id="overlay"></div>
 
     <nav class="navbar">
         <div class="logo-container">
-            <img src="./icons/Fourty By Mete.png" alt="MeteLogo" class="metelogo">
+            <img src="../icons/Fourty By Mete.png" alt="MeteLogo" class="metelogo">
             <a href="https://www.facebook.com/fourtybarbershop/" target="_blank" rel="noopener norefferer">
-                <img src="./icons/facebook.png" alt="FacebookLogo" class="fblogo"></a>
+                <img src="../icons/facebook.png" alt="FacebookLogo" class="fblogo"></a>
             <a href="https://www.instagram.com/fourty_barbershop/" target="_blank" rel="noopener norefferer">
-                <img src="./icons/instagram.webp" alt="InstagramLogo" class="instalogo"></a>
+                <img src="../icons/instagram.webp" alt="InstagramLogo" class="instalogo"></a>
         </div>
         <div class="navbar-right">
             <button class="burger" id="burger">&#9776;</button>
@@ -39,17 +40,17 @@
         </div>
 
         <div class="logo">
-            <img src="img/logo.png">
+            <img src="../gallery/gallery-img/logogallery.png">
         </div>
         <ul class="navbar-menu" id="navMenu">
 
-            <li><a href="./#about">Home</a></li>
-            <li><a href="./gallery/gallery.html">Gallery</a></li>
+            <li><a href="../#about">Home</a></li>
+            <li><a href="../gallery/gallery.html">Gallery</a></li>
 
 
-            <li><a href="./#ourStory">Über uns</a></li>
-            <li><a href="./#services">Preise & Leistungen</a></li>
-            <li><a href="./#contact">Kontakt</a></li>
+            <li><a href="../#ourStory">Über uns</a></li>
+            <li><a href="../#services">Preise & Leistungen</a></li>
+            <li><a href="../#contact">Kontakt</a></li>
         </ul>
     </nav>
 
@@ -60,9 +61,9 @@
             <div class="splide" id="image-slider">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide"><img src="./img/barber-background2.jpg" alt="Bild 1" /></li>
-                        <li class="splide__slide"><img src="./img/barbershop-brush.jpg" alt="Bild 2" /></li>
-                        <li class="splide__slide"><img src="./img/barbershop-inside.jpg" alt="Bild 3" /></li>
+                        <li class="splide__slide"><img src="../img/barber-background2.jpg" alt="Bild 1" /></li>
+                        <li class="splide__slide"><img src="../img/barbershop-brush.jpg" alt="Bild 2" /></li>
+                        <li class="splide__slide"><img src="../img/barbershop-inside.jpg" alt="Bild 3" /></li>
                     </ul>
                 </div>
             </div>
@@ -74,53 +75,21 @@
     </section>
 
 
-    <section id="ourStory" class="ourStory-section">
 
-        <h2>Über uns</h2>
+<section id="gallery" class="gallery">
 
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
+    <img src="./gallery-img/156876364_202840794926711_7617473695233975867_n.jpg" alt="Bild1">
 
-
-
-        <div class="ourStoryPictures">
-            <img src="./img/OurStory1.jpg" alt="OurStory1" data-aos="zoom-out" data-aos-duration="3000">
-            <img src="./img/OurStory2.jpg" alt="OurStory2" data-aos="zoom-out" data-aos-duration="3000">
-            <img src="./img/OurStory3.jpg" alt="OurStory3" data-aos="zoom-out" data-aos-duration="3000">
-        </div>
-
-
-        <p class="ourStoryContent" data-aos="fade-up"><strong>Fourty Barbershop By Mete<span class="reg-symbol">®</span>
-                Tradition trifft Stil <br> seit
-                2019 in Mannheim</strong><br><br>
-
-            Unser Barbershop wurde 2019 von Mete in Mannheim gegründet – mit einer klaren Vision:<br>
-
-            <br><strong>Qualität - Präzision - Service.</strong><br><br>
-
-            Seit 2009 im Friseurhandwerk bringt Mete nicht nur technisches Können,
-            sondern auch Leidenschaft und Feingefühl für jeden Haarschnitt mit.<br>
-
-            Dein Look ist unsere Mission.<br><br>
-
-            Reden können wir viel – aber unsere Google-Bewertungen zeigen, was wirklich läuft.
-        </p>
-        <img src="./icons/arrowdown.png" alt="ArrowDown" class="arrowdown">
-        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div class="elfsight-app-2e277a6e-4aea-4d35-a576-5bc2f1f7b0cb" data-elfsight-app-lazy></div>
-    </section>
-
-    <section id="services" class="service-section">
-
-        <div class="section-inner">
-            <h2>Preise & Leistungen</h2>
-
-            <img src="./img/Preisliste.png" class="pricelist" data-aos="zoom-out" data-aos-duration="3000">
-        </div>
-
-
-    </section>
-
-
+</section>
 
 
 
@@ -139,12 +108,12 @@
                     </div>
                     <div class="contact-container">
                         <div class="contact-item">
-                            <img src="./icons/phone-call.png" alt="PhoneLogo" class="phonelogo">
+                            <img src="../icons/phone-call.png" alt="PhoneLogo" class="phonelogo">
                             <a href="tel:+4962143753937">0621 43753937</a>
                         </div>
 
                         <div class="contact-item">
-                            <img src="./icons/WhatsApp.svg" alt="WhatsApp-Icon" class="whatsapplogo">
+                            <img src="../icons/WhatsApp.svg" alt="WhatsApp-Icon" class="whatsapplogo">
                             <a href="https://wa.me/4917632697108">0176 32697108</a>
                         </div>
                     </div>
@@ -163,10 +132,10 @@
                     <strong> Social Media: </strong><br>
                     <div class="socialmedia">
                         <a href="https://www.facebook.com/fourtybarbershop/" target="_blank" rel="noopener norefferer">
-                            <img src="./icons/facebook.png" alt="FacebookLogo" class="fblogo"></a>
+                            <img src="../icons/facebook.png" alt="FacebookLogo" class="fblogo"></a>
                         <a href="https://www.instagram.com/fourty_barbershop/" target="_blank"
                             rel="noopener norefferer">
-                            <img src="./icons/instagram.webp" alt="InstagramLogo" class="instalogo"></a>
+                            <img src="../icons/instagram.webp" alt="InstagramLogo" class="instalogo"></a>
                     </div>
                 </div>
             </div>
@@ -187,9 +156,9 @@
         <div class="footer-content">
             <p>&copy; 2025 Fourty Barbershop - Alle Rechte vorbehalten.</p>
             <nav class="footer-nav">
-                <a href="./impressum.html">Impressum</a>
+                <a href="../impressum.html">Impressum</a>
                 <span class="footer-seperator">|</span>
-                <a href="./datenschutz.html">Datenschutz</a>
+                <a href="../datenschutz.html">Datenschutz</a>
 
             </nav>
 
@@ -205,11 +174,16 @@
 
 
 
-    <script src="./scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+</script>
+
+
+
 </body>
 
 

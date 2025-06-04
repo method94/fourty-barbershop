@@ -92,3 +92,28 @@ menuLinks.forEach(link => {
 
     observer.observe(paragraph);
   });
+  
+  // Zoom beim click
+
+const overlay = document.getElementById('overlay');
+const images = document.querySelectorAll('#gallery img');
+
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    img.classList.toggle('zoomed');
+
+    if(img.classList.contains('zoomed')) {
+      overlay.style.display = 'block';
+    } else {
+      overlay.style.display = 'none';
+    }
+  });
+});
+
+overlay.addEventListener('click', () => {
+  document.querySelectorAll('#gallery img.zoomed').forEach(img => {
+    img.classList.remove('zoomed');
+  });
+  overlay.style.display = 'none';
+});
+

@@ -491,6 +491,7 @@ td {
 
 
 .ourStoryContent {
+  font-style: italic;
   padding: 1.5rem;
   border-radius: 12px;
   color: rgb(0, 0, 0);
@@ -564,4 +565,19 @@ td {
   .service-section {
     background-image: none;
   }
+}
+
+
+
+/* GALLERY SECTION */
+body.gallery-page {
+background-color: rgb(211, 36, 36);
+color: white;
+}
+
+.contact-section-gallery hr {
+  border: none;               /* Standardrand entfernen */
+  height: 3px;                /* Höhe der Linie */
+  background-color: rgb(165, 41, 41); /* Deine gewünschte Farbe (dunkelrot) */
+  margin: 1em 0;              /* Abstand oben und unten (optional) */
 }
