@@ -74,7 +74,7 @@ menuLinks.forEach(link => {
       if (index < fullText.length) {
         paragraph.textContent += fullText.charAt(index);
         index++;
-        setTimeout(type, 10); // Tippen-Geschwindigkeit (30ms pro Buchstabe)
+        setTimeout(type, 5); 
       }
     }
 

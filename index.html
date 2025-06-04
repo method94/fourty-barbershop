@@ -16,8 +16,8 @@
 
     <!-- Splide JS -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
-
+    <!-- AOS Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -44,9 +44,10 @@
         <ul class="navbar-menu" id="navMenu">
 
             <li><a href="#about">Home</a></li>
-            <li><a href="#services">Preise & Leistungen</a></li>
+
 
             <li><a href="#ourStory">Über uns</a></li>
+            <li><a href="#services">Preise & Leistungen</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
@@ -72,14 +73,48 @@
     </section>
 
 
+    <section id="ourStory" class="ourStory-section">
+
+        <h2>Über uns</h2>
+
+
+
+
+        <div class="ourStoryPictures">
+            <img src="./img/OurStory1.jpg" alt="OurStory1" data-aos="zoom-out" data-aos-duration="3000">
+            <img src="./img/OurStory2.jpg" alt="OurStory2" data-aos="zoom-out" data-aos-duration="3000">
+            <img src="./img/OurStory3.jpg" alt="OurStory3" data-aos="zoom-out" data-aos-duration="3000">
+        </div>
+
+
+        <p class="ourStoryText" data-aos="fade-up"><strong>Fourty Barbershop By Mete® - Tradition trifft Stil <br> seit
+                2019 in Mannheim</strong><br><br>
+
+            Unser Barbershop wurde 2019 von Mete in Mannheim gegründet – mit einer klaren Vision:<br>
+
+            <br><strong>Qualität - Präzision - Service.</strong><br><br>
+
+            Seit 2009 im Friseurhandwerk bringt Mete nicht nur technisches Können,
+            sondern auch Leidenschaft und Feingefühl für jeden Haarschnitt mit.<br>
+
+            Dein Look ist unsere Mission.<br><br>
+
+            Reden können wir viel – aber unsere Google-Bewertungen zeigen, was wirklich läuft.
+        </p>
+        <img src="./icons/arrowdown.png" alt="ArrowDown" class="arrowdown">
+        <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-2e277a6e-4aea-4d35-a576-5bc2f1f7b0cb" data-elfsight-app-lazy></div>
+    </section>
+
     <section id="services" class="service-section">
 
         <div class="section-inner">
             <h2>Preise & Leistungen</h2>
 
-            <img src="./img/Preisliste.png" class="pricelist">
+            <img src="./img/Preisliste.png" class="pricelist" data-aos="zoom-out" data-aos-duration="3000">
 
-<!--             <table class="service-table">
+            <!--             <table class="service-table">
                 <thead>
 
                     <tr>
@@ -138,40 +173,6 @@
 
 
 
-
-
-
-    <section id="ourStory" class="ourStory-section">
-
-        <h2>Über uns</h2>
-       <p class="ourStoryText" data-text="Fourty By Mete® - Tradition trifft Stil – seit 2019 in Mannheim
-
-Unser Barbershop wurde 2019 von Mete in Mannheim gegründet – mit einer klaren Vision:
-
-Qualität, Präzision und echter Service.
-
-Doch die Geschichte beginnt viel früher.
-Seit 2009 im Friseurhandwerk bringt Mete nicht nur technisches Können,
-sondern auch Leidenschaft und Feingefühl für jeden Haarschnitt mit.
-
-Was uns auszeichnet? Höchste Qualität, auf die man sich verlassen kann.
-Seit vielen Jahren stehen wir für saubere Schnitte, individuelle Beratung und ein Ambiente,
-in dem sich jeder willkommen fühlt. Ob klassischer Herrenhaarschnitt,
-moderner Fade oder Bartstyling – wir sorgen dafür, dass du den Laden nicht nur frisch,
-sondern auch mit einem Lächeln verlässt.
-
-Dein Look ist unsere Mission.
-
-Wir könnten dir noch viel erzählen – aber unsere Google-Bewertungen sagen’s besser."></p>
-        <div class="elfsight-wrapper">
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-2e277a6e-4aea-4d35-a576-5bc2f1f7b0cb" data-elfsight-app-lazy></div>
-        </div>
-    </section>
-
-
-
-
     <section id="contact" class="contact-section">
         <div class="section-inner">
             <h2>Kontakt</h2>
@@ -217,6 +218,7 @@ Wir könnten dir noch viel erzählen – aber unsere Google-Bewertungen sagen’
             </div>
 
         </div>
+
         <div class="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.749247032138!2d8.467524111798571!3d49.48924347130554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797cde9a53d58bf%3A0x3b88c40323d69ba4!2sFourty%20Barbershop!5e0!3m2!1sde!2sde!4v1748872055586!5m2!1sde!2sde"
@@ -250,7 +252,10 @@ Wir könnten dir noch viel erzählen – aber unsere Google-Bewertungen sagen’
 
 
     <script src="./scripts/script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

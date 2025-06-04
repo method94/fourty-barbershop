@@ -20,6 +20,8 @@ h2 {
   /* Links ausrichten */
 }
 
+
+
 /* FONT FACE */
 @font-face {
   font-family: 'OPTICloister';
@@ -133,8 +135,11 @@ h2 {
 #services {
   color: white;
   background-color: black;
+}
 
 
+.service-section h2 {
+  margin-bottom: -5rem;
 }
 
 .service-section {
@@ -161,6 +166,7 @@ h2 {
   position: relative;
   z-index: 2;
 }
+
 
 .service-section::before {
   content: '';
@@ -254,7 +260,7 @@ td {
   position: relative;
   width: 100%;
   /* volle Breite vom Container */
-  max-width: 400px;
+  max-width: 80vh;
   height: 0;
   padding-bottom: 25%;
   /* Seitenverhältnis 4:3 (450/600 = 0.75) */
@@ -340,6 +346,8 @@ td {
 .phonelogo {
   filter: brightness(0) invert(1)
 }
+
+
 
 
 .socialmedia {
@@ -434,14 +442,13 @@ td {
 /* Our Story Section */
 
 #ourStory {
-  background-color: black;
-  background-image: url('./img/barbershop-brush.jpg');
+  background-color: rgb(255, 255, 255);
   min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
+  color: rgb(0, 0, 0);
   min-height: 100vh;
   justify-content: space-between;
   flex-direction: column;
@@ -462,7 +469,7 @@ td {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+
   z-index: 0;
 }
 
@@ -472,7 +479,6 @@ td {
 }
 
 .elfsight-app-2e277a6e-4aea-4d35-a576-5bc2f1f7b0cb {
-  transform: scale(0.6);
   transform-origin: center;
 }
 
@@ -485,25 +491,26 @@ td {
 
 
 .ourStoryText {
-  background-color: rgba(0, 0, 0, 0.774);
+  font-family: Roboto;
   padding: 1.5rem;
   border-radius: 12px;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0 auto;
   line-height: 1.6;
+  max-width: 800px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .centered-strong {
   display: block;
-  /* Macht den Span zu einem Block-Element */
   text-align: center;
-  /* Zentriert den Text */
   font-weight: bold;
-  /* Fett */
+
   font-size: 1.2rem;
-  /* Optional: etwas größer */
+
   margin: 1rem 0;
-  /* Abstand nach oben und unten */
+
 }
 
 .reg-symbol {
@@ -512,20 +519,22 @@ td {
   vertical-align: super;
 }
 
-.ourStoryText {
-  white-space: pre-line;
 
-  font-size: 1rem;
-  line-height: 1.5;
-  min-height: 250px;
-
-  border-left: 2px solid #222;
-
-  padding-left: 8px;
-  overflow-wrap: break-word;
-
-  animation: blinkCursor 1s step-end infinite;
+.arrowdown {
+  width: 50px;
+  margin-bottom: 5%;
 }
+
+.ourStoryPictures {
+  display: flex;
+  justify-content: center; /* Inhalt links ausrichten */
+  flex-wrap: wrap;             /* Damit die Bilder umbrechen, falls zu breit */
+  gap: 50px;                   /* Abstand zwischen Bildern, optional */
+  width: 100%;                 /* Oder eine feste Breite, z.B. 300px */
+  max-width: 100%;            /* max Breite, falls gewünscht */
+  overflow-x: hidden;  
+}
+
 
 @keyframes blinkCursor {
   50% {
@@ -546,5 +555,14 @@ td {
     min-height: 1px;
     margin: 1rem 0;
     margin: 1rem auto;
+  }
+  .pricelist {
+    width: 110vw;       
+    max-width: none;
+    display: block;
+    margin-left: -20vw;
+  }
+  .service-section {
+    background-image: none;
   }
 }
