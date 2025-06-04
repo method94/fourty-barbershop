@@ -367,7 +367,7 @@ td {
   background-color: black;
   color: #fff;
   text-align: center;
-  padding: 1.5 rem 1rem;
+  padding: 1.5rem 1rem;
   font-size: 0.9rem;
 }
 
@@ -391,7 +391,7 @@ td {
 
 /* SLIDESHOW */
 
-#image-sider {
+#image-slider {
   width: 100vw;
   /* volle Breite des Viewports */
   margin: 0;
@@ -457,13 +457,13 @@ td {
   text-align: left;
   padding: 2rem;
   padding-left: 2rem;
-  padding-right: 2rem;
   box-sizing: border-box;
   align-items: center;
 }
 
 #ourStory::before {
   content: "";
+  background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -490,8 +490,7 @@ td {
 }
 
 
-.ourStoryText {
-  font-family: Roboto;
+.ourStoryContent {
   padding: 1.5rem;
   border-radius: 12px;
   color: rgb(0, 0, 0);
