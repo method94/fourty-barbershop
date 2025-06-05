@@ -602,6 +602,8 @@ td {
   color: white;
 }
 
+
+
 @keyframes blinkCursor {
   50% {
     border-color: transparent;
@@ -657,3 +659,6 @@ body.gallery-page {
   margin: 1em 0;
   /* Abstand oben und unten (optional) */
 }
+
+
+
