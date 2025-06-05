@@ -1,9 +1,9 @@
 
 if (!window.location.pathname.includes('gallery.html')) {
 
-window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
-    if(window.scrollY > 50) {
+    if (window.scrollY > 50) {
       navbar.classList.add('navbar--transparent');
     } else {
       navbar.classList.remove('navbar--transparent');
@@ -12,13 +12,13 @@ window.addEventListener('scroll', function() {
 
   const logo = document.querySelector('.logo');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) { 
-    logo.classList.add('hidden');
-  } else {
-    logo.classList.remove('hidden');
-  }
-});
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      logo.classList.add('hidden');
+    } else {
+      logo.classList.remove('hidden');
+    }
+  });
 
 }
 
@@ -53,51 +53,51 @@ menuLinks.forEach(link => {
 
 /* SLIDESHOW */
 
-  document.addEventListener('DOMContentLoaded', function () {
-    new Splide('#image-slider', {
-      type    : 'loop',
-      perPage : 1,
-      autoplay: true,
-      interval: 3000,
-      pauseOnHover: true,
-      pagination: true,
-      arrows: true,
-    }).mount();
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#image-slider', {
+    type: 'loop',
+    perPage: 1,
+    autoplay: true,
+    interval: 3000,
+    pauseOnHover: true,
+    pagination: true,
+    arrows: true,
+  }).mount();
+});
 
-    document.addEventListener('DOMContentLoaded', () => {
-    const paragraph = document.querySelector('.ourStoryText');
-    if (!paragraph) return;
+document.addEventListener('DOMContentLoaded', () => {
+  const paragraph = document.querySelector('.ourStoryText');
+  if (!paragraph) return;
 
-    const fullText = paragraph.getAttribute('data-text');
-    paragraph.textContent = ''; // leer machen zum Start
+  const fullText = paragraph.getAttribute('data-text');
+  paragraph.textContent = ''; // leer machen zum Start
 
-    let index = 0;
+  let index = 0;
 
-    function type() {
-      if (index < fullText.length) {
-        paragraph.textContent += fullText.charAt(index);
-        index++;
-        setTimeout(type, 5); 
-      }
+  function type() {
+    if (index < fullText.length) {
+      paragraph.textContent += fullText.charAt(index);
+      index++;
+      setTimeout(type, 5);
     }
+  }
 
-    // Intersection Observer starten, sobald sichtbar wird
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          type();
-          observer.disconnect(); // nur einmal tippen
-        }
-      });
-    }, {
-      threshold: 0.5 // 50% sichtbar
+  // Intersection Observer starten, sobald sichtbar wird
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        type();
+        observer.disconnect(); // nur einmal tippen
+      }
     });
-
-    observer.observe(paragraph);
+  }, {
+    threshold: 0.5 // 50% sichtbar
   });
-  
-  // Zoom beim click
+
+  observer.observe(paragraph);
+});
+
+// Zoom beim click
 
 const overlay = document.getElementById('overlay');
 const images = document.querySelectorAll('#gallery img');
@@ -106,7 +106,7 @@ images.forEach(img => {
   img.addEventListener('click', () => {
     img.classList.toggle('zoomed');
 
-    if(img.classList.contains('zoomed')) {
+    if (img.classList.contains('zoomed')) {
       overlay.style.display = 'block';
     } else {
       overlay.style.display = 'none';

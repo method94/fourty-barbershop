@@ -61,7 +61,52 @@ h2 {
   color: white;
 }
 
+.galleryButton {
+  width: 200px;
+  height: 50px;
+  font-size: 26px;
+  color: #ffffff;
+  background: linear-gradient(to top right, #000000, #000000);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  font-family: OPTICloister;
+  transition: all 0.25s ease;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  position: absolute;
+  bottom: 30px;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  text-decoration: none;
+}
+
+.galleryButton:hover {
+  color: #030303;
+  border-color: #030303;
+  background: white;
+  cursor: pointer;
+}
+
+.galleryButton a {
+  text-decoration: none;
+  color: white;
+}
+
+.galleryButton:hover a {
+  color: black;
+}
+
+.galleryButton:visited {
+  text-decoration: none;
+  color: black;
+}
 
 .hero-content {
   position: relative;
@@ -130,7 +175,7 @@ h2 {
   padding: 0 2rem;
 }
 
-/* SECTION SERVICES ---------------------------------------------------------------------------------- */
+/* Service Section ---------------------------------------------------------------------------------- */
 
 #services {
   color: white;
@@ -179,6 +224,11 @@ h2 {
 .pricelist {
   max-width: 100%;
   height: auto;
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 /* Tabelle Services */
@@ -224,6 +274,10 @@ td {
   vertical-align: middle;
   height: 20px;
   width: auto;
+}
+
+.service-section {
+  border-bottom: 2px solid #fff;
 }
 
 /* CONTACT SECTION */
@@ -527,12 +581,20 @@ td {
 
 .ourStoryPictures {
   display: flex;
-  justify-content: center; /* Inhalt links ausrichten */
-  flex-wrap: wrap;             /* Damit die Bilder umbrechen, falls zu breit */
-  gap: 50px;                   /* Abstand zwischen Bildern, optional */
-  width: 100%;                 /* Oder eine feste Breite, z.B. 300px */
-  max-width: 100%;            /* max Breite, falls gewünscht */
-  overflow-x: hidden;  
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow: hidden;
+
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 
@@ -556,8 +618,9 @@ td {
     margin: 1rem 0;
     margin: 1rem auto;
   }
+
   .pricelist {
-    width: 110vw;       
+    width: 110vw;
     max-width: none;
     display: block;
     margin-left: -20vw;
@@ -566,7 +629,7 @@ td {
 }
 
 @media (max-width: 2000px) {
-    .service-section {
+  .service-section {
     background-image: none;
     background-color: #0c0d0f;
   }
@@ -576,13 +639,17 @@ td {
 
 /* GALLERY SECTION */
 body.gallery-page {
-background-color: rgb(211, 36, 36);
-color: white;
+  background-color: rgb(211, 36, 36);
+  color: white;
 }
 
 .contact-section-gallery hr {
-  border: none;               /* Standardrand entfernen */
-  height: 3px;                /* Höhe der Linie */
-  background-color: rgb(165, 41, 41); /* Deine gewünschte Farbe (dunkelrot) */
-  margin: 1em 0;              /* Abstand oben und unten (optional) */
+  border: none;
+  /* Standardrand entfernen */
+  height: 3px;
+  /* Höhe der Linie */
+  background-color: rgb(165, 41, 41);
+  /* Deine gewünschte Farbe (dunkelrot) */
+  margin: 1em 0;
+  /* Abstand oben und unten (optional) */
 }

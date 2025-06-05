@@ -20,6 +20,10 @@ body {
     border: 3px solid rgb(255, 255, 255);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 #gallery img.zoomed {
@@ -33,42 +37,46 @@ body {
 
 
 #overlay {
-  position: fixed;      
-  top: 0;
-  left: 0;
-  width: 100vw;        
-  height: 100vh;        
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 9998;        
-  display: none;    
-  cursor: pointer;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9998;
+    display: none;
+    cursor: pointer;
 }
 
 #lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  z-index: 9999;
-  overflow-x: auto;
-  white-space: nowrap;
-  scroll-snap-type: x mandatory;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 9999;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
 }
 
 #lightbox-content img {
-  height: 90vh;
-  width: auto;
-  display: inline-block;
-  margin: 5vh 5vw;
-  scroll-snap-align: center;
-  object-fit: contain;
-  cursor: pointer;
+    height: 90vh;
+    width: auto;
+    display: inline-block;
+    margin: 5vh 5vw;
+    scroll-snap-align: center;
+    object-fit: contain;
+    cursor: pointer;
 }
 
+.gallery {
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+}
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     #gallery img {
         width: 200px;
     }
