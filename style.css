@@ -598,6 +598,10 @@ td {
 }
 
 
+.made-by {
+  color: white;
+}
+
 @keyframes blinkCursor {
   50% {
     border-color: transparent;
