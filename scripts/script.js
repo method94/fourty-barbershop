@@ -43,10 +43,8 @@ const menuLinks = navMenu.querySelectorAll('a');
 
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
-    // Menü schließen
     burger.classList.remove('active');
     navMenu.classList.remove('active');
-    // Burger-Icon wieder auf ☰ setzen
     burger.textContent = '☰';
   });
 });
@@ -91,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, {
-    threshold: 0.5 // 50% sichtbar
+    threshold: 0.5 
   });
 
   observer.observe(paragraph);
