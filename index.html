@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Hakan Annac">
-    <meta name="description" content="This page represent fourty by mete barbershop">
+    <meta name="description" content="This page represent fourty barbershop">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FourtyBarbershop</title>
@@ -18,7 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <!-- AOS Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
 </head>
 
 
@@ -143,7 +142,7 @@
 
                         <div class="contact-item">
                             <img src="./icons/WhatsApp.svg" alt="WhatsApp-Icon" class="whatsapplogo">
-                            <a href="https://wa.me/4917632697108">0176 32697108</a>
+                            <a href="https://wa.me/4917632697108" target="_blank" rel="noopener noreferrer">0176 32697108</a>
                         </div>
                     </div>
 
@@ -210,6 +209,36 @@
     <script>
         AOS.init();
     </script>
+
+
+    <!-- Scroll nach oben Button -->
+    <button id="scrollToTop" class="scrollToTop" title="Nach_oben_scrollen" data-aos="fade-left"
+        data-aos-duration="800">
+        <img src="../icons/arrowUp.svg" alt="Pfeil_Nach_Oben" class="arrowUp">
+    </button>
+
+    <script>
+
+        const scrollButton = document.getElementById('scrollToTop');
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 600) {
+                scrollButton.classList.add('visible');
+                AOS.refresh();
+            } else {
+                scrollButton.classList.remove('visible');
+            }
+        });
+
+        scrollButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
+
 </body>
 
 
